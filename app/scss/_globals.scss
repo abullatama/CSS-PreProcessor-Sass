@@ -55,3 +55,16 @@ button,
   border: 0;
   font-weight: 400;
 }
+
+//display
+.hide-for-mobile {
+  @include breakpoint-down(md) {
+    display: none;
+  }
+}
+
+.hide-for-desktop {
+  @include breakpoint-up(lg) {
+    display: none;
+  }
+}
