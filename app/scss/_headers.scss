@@ -1,5 +1,11 @@
 .header {
+  nav {
+    padding: 24px;
+  }
+
   &__logo {
+    img {
+    }
   }
 
   &__menu {
@@ -12,6 +18,13 @@
       &:not(:last-child) {
         margin-bottom: 3px;
       }
+    }
+  }
+
+  &__links {
+    a {
+      font-size: $font-sm;
+      color: $grayishBlue;
     }
   }
 }
