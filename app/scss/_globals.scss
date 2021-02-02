@@ -44,11 +44,11 @@ a:hover {
 // Buttons
 button,
 .button {
-  width: 165px;
-  height: 46px;
-  padding: 0.9375rem 2.25rem;
-  background: linear-gradient(to right, $limeGreen, $brightCyan);
+  width: 10.3125rem;
+  height: 2.875rem;
   font-size: $font-sm;
+  padding: 0.875rem 2.25rem;
+  background: linear-gradient(to right, $limeGreen, $brightCyan);
   color: $white;
   border-radius: 50px;
   cursor: pointer;
