@@ -16,6 +16,10 @@ body {
   font-size: $font-md;
   font-weight: 300;
   line-height: 1.3;
+
+  &.noscroll {
+    overflow: hidden;
+  }
 }
 
 a,
@@ -54,6 +58,11 @@ button,
   cursor: pointer;
   border: 0;
   font-weight: 400;
+}
+
+//spacing
+.container {
+  padding: 1.5rem;
 }
 
 //display
