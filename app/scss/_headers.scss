@@ -1,7 +1,10 @@
 .header {
+  position: relative;
+  z-index: 1;
+
   //hamburger menu
   &.open {
-    .header__menu {
+    .header__toggle {
       > span:first-child {
         transform: rotate(45deg);
       }
@@ -19,11 +22,18 @@
   .overlay {
     visibility: hidden;
     position: fixed;
-    top: 4.6875rem;
+    top: 0px;
     right: 0px;
     bottom: 0px;
     left: 0px;
     background: linear-gradient($darkBlue, transparent);
+  }
+
+  nav {
+    position: relative;
+    background-color: $white;
+    padding-top: 1.125rem;
+    padding-bottom: 1.125rem;
   }
 
   &__logo {
@@ -33,7 +43,7 @@
     }
   }
 
-  &__menu {
+  &__toggle {
     > span {
       display: block;
       width: 1.625rem;
@@ -50,7 +60,7 @@
 
   &__links {
     a {
-      font-size: $font-sm;
+      font-size: 0.875rem;
       color: $grayishBlue;
       transition: color 500ms ease-in-out;
       position: relative;
@@ -81,17 +91,10 @@
     }
   }
 
-  &__cta {
-    transition: opacity 500ms ease-in-out;
-
-    &:hover {
-      opacity: 0.75;
-    }
-  }
-
-  &__toggle {
+  &__menu {
     visibility: hidden;
     position: absolute;
+    font-size: 1rem;
     padding: 1.625rem;
     margin: 1.5rem;
     left: 0;

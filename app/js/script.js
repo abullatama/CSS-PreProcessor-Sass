@@ -3,7 +3,7 @@ const btnHamburger = document.querySelector("#btnHamburger");
 const header = document.querySelector(".header");
 const overlay = document.querySelector(".overlay");
 const body = document.querySelector("body");
-const toggle = document.querySelector(".header__toggle");
+const toggle = document.querySelector(".header__menu");
 
 btnHamburger.addEventListener("click", function () {
   if (header.classList.contains("open")) {
