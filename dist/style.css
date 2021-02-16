@@ -46,6 +46,7 @@ body {
   font-size: 1.125rem;
   font-weight: 300;
   line-height: 1.3;
+  overflow-x: hidden;
 }
 
 body.noscroll {
@@ -308,11 +309,20 @@ h3 {
 
 @media (min-width: 40rem) {
   .hero__image::after {
+    width: 27.5rem;
+    height: 82%;
+    left: 13%;
+    background-size: 101%;
+    background-position: center 175%;
+  }
+}
+
+@media (min-width: 64rem) {
+  .hero__image::after {
     width: 125%;
     height: 126%;
     left: 25%;
     background-size: 94%;
-    background-position: center 175%;
   }
 }
 
@@ -354,5 +364,10 @@ h3 {
   .hero__text p {
     font-size: 1rem;
   }
+}
+
+.features {
+  background-color: #f3f4f6;
+  height: 200px;
 }
 /*# sourceMappingURL=style.css.map */

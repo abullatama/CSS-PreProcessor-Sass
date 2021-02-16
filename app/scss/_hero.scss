@@ -45,11 +45,18 @@
       background-position: center bottom;
 
       @include breakpoint-up(md) {
+        width: 27.5rem;
+        height: 82%;
+        left: 13%;
+        background-size: 101%;
+        background-position: center 175%;
+      }
+
+      @include breakpoint-up(lg) {
         width: 125%;
         height: 126%;
         left: 25%;
         background-size: 94%;
-        background-position: center 175%;
       }
     }
   }
