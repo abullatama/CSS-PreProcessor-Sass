@@ -1,4 +1,61 @@
 .features {
   background-color: $lightGrayishBlue;
-  height: 200px;
+  &__flex {
+    @include breakpoint-up(md) {
+      display: flex;
+    }
+  }
+  &__text {
+    text-align: center;
+    margin-bottom: 3.8125rem;
+    @include breakpoint-up(md) {
+      max-width: 38.4375rem;
+      text-align: left;
+    }
+    h1 {
+      font-weight: 300;
+      margin-bottom: 2rem;
+      font-size: 2.0625rem;
+      @include breakpoint-up(md) {
+        font-size: 2.3125rem;
+      }
+    }
+    p {
+      color: $grayishBlue;
+      margin-top: 0;
+      line-height: 1.5;
+      font-size: 0.9375rem;
+      margin-bottom: 0;
+      @include breakpoint-up(md) {
+        font-size: 1rem;
+      }
+    }
+  }
+  &__item {
+    flex: 1;
+    text-align: center;
+    &:not(:last-child) {
+      margin-bottom: 2.375rem;
+      @include breakpoint-up(md) {
+        margin-right: 1.875rem;
+      }
+    }
+    @include breakpoint-up(md) {
+      text-align: left;
+    }
+  }
+  &__icon {
+    margin-bottom: 1.875rem;
+    @include breakpoint-up(md) {
+      margin-bottom: 2.6875rem;
+    }
+  }
+  &__title {
+    margin-bottom: 1.875rem;
+  }
+  &__description {
+    font-size: 0.9375rem;
+    color: $grayishBlue;
+    margin-top: 0;
+  }
 }

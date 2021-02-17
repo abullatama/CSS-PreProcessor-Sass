@@ -1,9 +1,11 @@
 .hero {
   background: $veryLightGray;
 
-  @include breakpoint-up(md) {
-    display: flex;
-    align-items: center;
+  .container {
+    @include breakpoint-up(md) {
+      display: flex;
+      align-items: center;
+    }
   }
 
   &__image {
