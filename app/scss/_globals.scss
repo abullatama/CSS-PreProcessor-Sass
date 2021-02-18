@@ -21,6 +21,9 @@ body {
   &.noscroll {
     overflow: hidden;
   }
+  img {
+    object-fit: cover;
+  }
 }
 
 a,
@@ -31,7 +34,9 @@ a:hover {
 
 // Flexbox
 .flex {
-  display: flex;
+  @include breakpoint-up(md) {
+    display: flex;
+  }
 
   &-jc-sb {
     justify-content: space-between;

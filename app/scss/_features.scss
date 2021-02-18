@@ -1,10 +1,5 @@
 .features {
   background-color: $lightGrayishBlue;
-  &__flex {
-    @include breakpoint-up(md) {
-      display: flex;
-    }
-  }
   &__text {
     text-align: center;
     margin-bottom: 3.8125rem;
